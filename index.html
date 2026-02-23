@@ -116,6 +116,12 @@
             background-clip: text;
         }
 
+        @media (max-width: 768px) {
+            .logo img {
+                height: 40px;
+            }
+        }
+
         nav {
             display: flex;
             gap: 40px;
@@ -401,6 +407,26 @@
             font-size: 20px;
         }
 
+        .service-link {
+            display: inline-block;
+            padding: 15px 40px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--dark-bg);
+            background: linear-gradient(135deg, var(--cyber-blue), var(--cyber-purple));
+            border-radius: 50px;
+            transition: all 0.3s;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .service-link:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+        }
+
         /* About */
         .about {
             padding: 150px 0;
@@ -519,10 +545,6 @@
             .service-card, .about-box, .contact-info {
                 padding: 35px;
             }
-
-            .logo-text {
-                display: none;
-            }
         }
 
         /* スクロールアニメーション用 */
@@ -580,7 +602,7 @@
                 <div class="service-card fade-in">
                     <div class="service-tag">Coming Soon</div>
                     <h3>TASKAN</h3>
-                    <p class="service-subtitle">AI-Powered Task Management</p>
+                    <p class="service-subtitle">タスク管理ツール「タスカン」</p>
                     <p class="service-description">
                         優先順位付けが苦手な方でも、システムの誘導に従うだけで自然と適切なタスク管理ができるツール。AIが最適な順序を自動提示します。
                     </p>
@@ -590,6 +612,9 @@
                         <li>自然言語入力 – AI連携で「明日までに契約書レビュー」と入力するだけ</li>
                         <li>BYOK方式 – 自分のAPIキーで高度な機能を利用可能</li>
                     </ul>
+                    <div style="margin-top: 30px;">
+                        <a href="https://positive-intuition-production-bf64.up.railway.app/login" target="_blank" class="service-link">タスカンを利用する →</a>
+                    </div>
                 </div>
 
                 <div class="service-card fade-in">
@@ -634,7 +659,7 @@
                 <div class="contact-item">
                     <div class="contact-label">Email</div>
                     <div class="contact-value">
-                        <a href="mailto:sapowl.owl@gmail.com">sapowl.owl@gmail.com</a>
+                        <a href="mailto:supowl.owl@gmail.com">supowl.owl@gmail.com</a>
                     </div>
                 </div>
             </div>
